@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="RAMCO_MAPPING1.SiteMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .auto-style6 {
+            width: 285px;
+            height: 83px;
+        }
+    </style>
+   <%--bootstrap css--%>
+      <link href="Content/bootstrap.min.css" rel="stylesheet" />
+      <%--datatables css--%>
+      <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+      <%--fontawesome css--%>
+      <link href="fontawesome/css/all.css" rel="stylesheet" />
+      <%--our custom css--%>
+      <link href="css/customstylesheet.css" rel="stylesheet" />
+      <%--jquery--%>
+      <script src="Scripts/jquery-3.4.1.slim.min.js"></script>
+     <%--jquery--%>
+      <script src="Scripts/jquery-3.4.1.min.js"></script>
+      <%--popper js--%>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+      <%--bootstrap js--%>
+      <script src="Scripts/bootstrap.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+             <nav class="navbar navbar-light bg-warning">
+               <img src="images/logo.jpg" class="auto-style6" />
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+               </button>
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="nav nav-tabs">
+                     <li class="nav-item active">
+                        <asp:LinkButton class="nav-link" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">User Login</asp:LinkButton>
+                     </li>
+                   <li class="nav-item active">
+                        <asp:LinkButton class="nav-link" ID="LinkButton4" runat="server" OnClick="LinkButton4_Click" Visible="False">HOME</asp:LinkButton>
+                     </li>
+                    <li class="nav-item active">
+                        <asp:LinkButton class="nav-link" ID="LinkButton" runat="server" OnClick="LinkButton6_Click" Visible="False">STOCK INFORMATION</asp:LinkButton>
+                     </li>
+                    <li class="nav-item active">
+                        <asp:LinkButton class="nav-link" ID="LinkButton5" runat="server" OnClick="LinkButton5_Click" Visible="False">SALES INFORMATION</asp:LinkButton>
+                     </li>
+                     <li class="nav-item active">
+                        <asp:LinkButton class="nav-link" ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Sign Up</asp:LinkButton>
+                     </li>
+                     <li class="nav-item active">
+                        <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server" OnClick="LinkButton3_Click" Visible="False">Logout</asp:LinkButton>
+                     </li>
+                     <li class="nav-item active">
+                        <asp:LinkButton class="nav-link" ID="LinkButton7" runat="server" OnClick="LinkButton7_Click" Visible="False">Hello user</asp:LinkButton>
+                     </li>
+                  </ul>
+                 </div>
+                 </nav>
+
+        </div>  
+
+        <!-- Main Content Placeholder -->
+        <div>
+           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <!-- Main Content Placeholder -->
+
+         <!-- Footer -->
+        <footer>
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+
+                    </div>
+
+                </div>
+            </div>
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p style="color:whitesmoke">&copy All right Reversed. <a class="footerlinks" href="#" target="_blank">THE RAMCO CEMENTS </a></p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <!-- ./Footer -->
+
+    </form>
+</body>
+</html>
